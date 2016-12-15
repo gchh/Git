@@ -91,8 +91,8 @@ push：本地 --> 远程
 git merge --no-ff -m "merge with no-ff提交说明" otherbranch 合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。  
 带--no-ff ，在合并后，Your branch is ahead of 'origin/master' by 2 commits，一个是在分支时的commit，一个是合并时的commit。不带--no-ff，在合并后，Your branch is ahead of 'origin/master' by 1 commit，只有合并时的commit。  
 git log --graph --pretty=oneline --abbrev-commit查看分支情况：  
-/* e4530d9 add new branch dev2   /Fast forward合并，产生1个commit，看不出曾经有分支做过合并  
-/*   addf439 merge with no-ff　　　　　　　　　　　　/合并时产生的commit  
+|* e4530d9 add new branch dev2   /Fast forward合并，产生1个commit，看不出曾经有分支做过合并  
+|*   addf439 merge with no-ff　　　　　　　　　　　　/合并时产生的commit  
 |\　　　　　　　　　　　　　　　　　　　　　　　      /带—no-ff合并后保留分支情况  
 | * bbfcddd add new branch dev1　　　　　　　　　  /分支产生的commit  
 |/  
