@@ -1,10 +1,10 @@
-http://www.liaoxuefeng.com
-https://git-scm.com/book/zh/v2
+http://www.liaoxuefeng.com  
+https://git-scm.com/book/zh/v2  
 Git的官方网站：http://git-scm.com
 
 注意命令间的空格和”-”的个数 
 
-创建版本库：
+创建版本库：  
 mkdir learngit 在当前目录下创建一个空目录
 cd learngit 指向创建的目录
 pwd 显示当前目录路径
