@@ -145,14 +145,15 @@ git tag -d <tagname>删除标签
 创建的标签都只存储在本地，不会自动推送到远程。如果要推送某个标签到远程，使用命令git push origin <tagname>
 git push origin --tags一次性推送全部尚未推送到远程的本地标签
 删除远程标签，首先要删除本地标签，然后git push origin :refs/tags/<tagname>删除远程标签
-?	命令git push origin <tagname>可以推送一个本地标签；
-?	命令git push origin --tags可以推送全部未推送过的本地标签；
-?	命令git tag -d <tagname>可以删除一个本地标签；
-?	命令git push origin :refs/tags/<tagname>可以删除一个远程标签。
+	命令git push origin <tagname>可以推送一个本地标签；
+	命令git push origin --tags可以推送全部未推送过的本地标签；
+	命令git tag -d <tagname>可以删除一个本地标签；
+	命令git push origin :refs/tags/<tagname>可以删除一个远程标签。
 
-?	在GitHub上，可以任意Fork开源仓库；
-?	自己拥有Fork后的仓库的读写权限；
-?	可以推送pull request给官方仓库来贡献代码。
+	在GitHub上，可以任意Fork开源仓库；
+	自己拥有Fork后的仓库的读写权限；
+	可以推送pull request给官方仓库来贡献代码。
+
 git config --global color.ui true 让Git显示颜色
 
 在Git工作区的根目录下创建一个特殊的.gitignore文件，然后把要忽略的文件名填进去，Git就会自动忽略这些文件。不需要从头写.gitignore文件，GitHub已经为我们准备了各种配置文件，只需要组合一下就可以使用了。所有配置文件可以直接在线浏览：https://github.com/github/gitignore
