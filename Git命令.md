@@ -1,5 +1,7 @@
-markdown，.md文件，他的语法规范是空格+空格+回车换行  
-
+###把一个本地文件夹创建成仓库，首先命令行指向该文件夹，然后使用git init命令，这样该文件夹就成为一个git本地仓库；  
+###然后，可以使用touch .gitignore在该文件夹下创建.gitignore文件，打开该文件，可以编写要忽略的文件；`*.文件后缀名`忽略该类型文件，`/文件夹名/*`忽略该文件夹下所有文件  
+###
+markdown，.md文件，他的语法规范是空格+空格+回车换行  
 http://www.liaoxuefeng.com  
 https://git-scm.com/book/zh/v2  
 Git的官方网站：http://git-scm.com
